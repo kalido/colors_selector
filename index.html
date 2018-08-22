@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script type="text/javascript">
       $(document).ready(function(){
+        $("#contenedor").mouseleave(function(){
+          $('.item').css( { "margin-bottom" : "8px"} );
+          $('#choose,#pointer').css( { "opacity" : "0"} );
+        });
         $('.item, this').click(function(){
           $('.item').css( { "margin-bottom" : "8px"} );
           var x = $(this).position();
@@ -29,29 +33,29 @@
       <div id="choose"></div>
       <div id="pointer"></div>
       <div id="colors">
-        <div class="item" style="background-color: rgb(250,230,3);"><p>Yellowed Orange<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(250,230,3);"><p>Jasmine<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(192,179,3);"><p>Artichoke<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(255,244,95);"><p>Deco Yellow<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(254,238,0);"><p>Neon Yellow<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(245,255,18);"><p>Canary Yellow<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(245,255,18	);"><p>Lemon Yellow<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(252,255,217);"><p>Cream<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(186,227,3);"><p>Chartreuse<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(199,255,3);"><p>Yellow Chartreuse<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(173,227,0);"><p>Limepeel<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(42,44,37);"><p>Dark Umber<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(84,121,0);"><p>Moss Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(224,255,181);"><p>Pale Sage<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(143,255,3);"><p>Spring Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(51,95,0);"><p>Kelp Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(70,80,60);"><p>Dark Brown<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(120,240,41);"><p>Apple Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb( 73,227,3);"><p>Kelley Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(15,71,0);"><p>Marine Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(40,225,10);"><p>Grass Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(230,243,229);"><p>Grey Green Light<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
-        <div class="item" style="background-color: rgb(52,205,52);"><p>True Green<span class="yi"></span>, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(230,243,229);"><p>Grey Green Light, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(252,255,217);"><p>Cream, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(224,255,181);"><p>Pale Sage, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(250,230,3);"><p>Yellowed Orange, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(250,230,80);"><p>Jasmine, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(255,244,95);"><p>Deco Yellow, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(254,238,0);"><p>Neon Yellow, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(245,255,18);"><p>Canary Yellow, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(245,255,18);"><p>Lemon Yellow, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(192,179,3);"><p>Artichoke, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(186,227,3);"><p>Chartreuse, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(199,255,3);"><p>Yellow Chartreuse, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(173,227,0);"><p>Limepeel, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(143,255,3);"><p>Spring Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(120,240,41);"><p>Apple Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(73,227,3);"><p>Kelley Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(40,225,10);"><p>Grass Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(52,205,52);"><p>True Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(84,121,0);"><p>Moss Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(51,95,0);"><p>Kelp Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(15,71,0);"><p>Marine Green, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(70,80,60);"><p>Dark Brown, Neque porro quisquam est qui dolorem</p></div>
+        <div class="item" style="background-color: rgb(42,44,37);"><p>Dark Umber, Neque porro quisquam est qui dolorem</p></div>
       </div>
     </div>
   </body>
